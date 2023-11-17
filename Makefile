@@ -1,6 +1,6 @@
 .PHONY: crete-xdg-config-dir tmux keyd
 
-all: tmux
+all: tmux keyd
 
 create-xdg-config-dir:
 	[ -d "$(XDG_CONFIG_HOME)" ] || mkdir "$(XDG_CONFIG_HOME)"
