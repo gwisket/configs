@@ -1,6 +1,6 @@
-.PHONY: crete-xdg-config-dir tmux keyd emacs
+.PHONY: crete-xdg-config-dir tmux keyd emacs bash
 
-all: tmux keyd emacs
+all: tmux keyd emacs bash
 
 create-xdg-config-dir:
 	[ -d "$(XDG_CONFIG_HOME)" ] || mkdir "$(XDG_CONFIG_HOME)"
@@ -13,3 +13,6 @@ keyd:
 
 emacs: create-xdg-config-dir
 	cp -r ./emacs "$(XDG_CONFIG_HOME)"/
+
+bash:
+	cp -r ./bash/.* "$(HOME)"
