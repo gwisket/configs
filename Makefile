@@ -1,4 +1,4 @@
-.PHONY: crete-xdg-config-dir tmux keyd emacs bash
+.PHONY: crete-xdg-config-dir tmux keyd emacs bash nvim
 
 all: tmux keyd emacs bash
 
@@ -16,3 +16,6 @@ emacs: create-xdg-config-dir
 
 bash:
 	cp -r ./bash/.* "$(HOME)"
+
+nvim:
+	cp -r ./nvim/ $(XDG_CONFIG_HOME)/
