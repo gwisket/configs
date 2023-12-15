@@ -14,8 +14,6 @@ vim.o.compleopt = 'menu,menuone,noselect'
 
 vim.wo.relativenumber = true
 
-vim.cmd [[autocmd BufWritePre * :Prettier]]
-
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)

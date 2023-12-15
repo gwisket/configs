@@ -17,4 +17,5 @@ return {
   require 'plugins.nvim-ts-autotag',
   require 'plugins.neogen',
   require 'plugins.indent-blackline_nvim',
+  require 'plugins.conform_nvim'
 }

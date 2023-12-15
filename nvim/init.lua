@@ -35,6 +35,8 @@ require('lazy').setup({
   "danymat/neogen",
   'chaoren/vim-wordmotion',
 
+  'stevearc/conform.nvim',
+
   -- appearances
   -- theme
   'shaunsingh/seoul256.nvim',
