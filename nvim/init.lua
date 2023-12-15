@@ -40,7 +40,10 @@ require('lazy').setup({
   'shaunsingh/seoul256.nvim',
   -- bottom bar
   'nvim-lualine/lualine.nvim',
-  'lukas-reineke/indent-blankline.nvim',
+  {
+    'lukas-reineke/indent-blankline.nvim',
+    main = "ibl",
+  },
 
   -- lsp
   'williamboman/mason.nvim',
@@ -57,5 +60,7 @@ require('lazy').setup({
   'nvim-lua/plenary.nvim',
 })
 
-require("settings")
+vim.opt.termguicolors = true;
 require("plugins")
+require("settings")
+
